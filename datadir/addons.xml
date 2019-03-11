@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addons><addon id="repository.lattelecomtv" name="Lattelecom Live TV addon (unofficial) repository" provider-name="janhouse" version="1.0.0">
+<addons><addon id="repository.lattelecomtv" name="Lattelecom Live TV addon (unofficial) repository" provider-name="Janhouse" version="1.0.0">
     <extension point="xbmc.addon.repository">
         <dir minversion="14.0.0">
             <info compressed="false">https://janhouse.github.io/kodi-repo-lattelecomtv/datadir/addons.xml</info>
@@ -22,13 +22,14 @@
             <fanart />
         </assets>
     </extension>
-</addon><addon id="lattelecomtv" name="Lattelecom Live TV" provider-name="martinsbalodis" version="0.2.0">
+</addon><addon id="lattelecomtv" name="Lattelecom Live TV" provider-name="martinsbalodis" version="0.3.0">
     <requires>
         <import addon="xbmc.python" version="2.14.0" />
     </requires>
 	<extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>video</provides>
 	</extension>
+	<extension library="service.py" point="xbmc.service" start="login" />
 	<extension point="xbmc.addon.metadata">
         <summary lang="en_gb">Lattelecom Shortcut.lv Live TV</summary>
         <description lang="en_gb">Watch Lattelecom live TV from Kodi</description>
