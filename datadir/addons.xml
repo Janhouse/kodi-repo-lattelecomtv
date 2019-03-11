@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="repository.lattelecomtv" name="Lattelecom Live TV addon (unofficial) repository" provider-name="janhouse" version="1.0.0">
+    <extension point="xbmc.addon.repository">
+        <dir minversion="14.0.0">
+            <info compressed="false">https://janhouse.github.io/kodi-repo-lattelecomtv/datadir/addons.xml</info>
+            <checksum>https://janhouse.github.io/kodi-repo-lattelecomtv/datadir/addons.xml.md5</checksum>
+            <datadir zip="true">https://janhouse.github.io/kodi-repo-lattelecomtv/datadir/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Kodi repository for unofficial Lattelecom Live TV addon</summary>
+        <description lang="en_GB">https://github.com/martinsbalodis/xbmc-lattelecom.tv</description>
+        <language />
+        <platform>all</platform>
+        <license />
+        <forum />
+        <source>https://github.com/Janhouse/kodi-repo-lattelecomtv</source>
+        <news />
+        <disclaimer />
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart />
+        </assets>
+    </extension>
+</addon><addon id="lattelecomtv" name="Lattelecom Live TV" provider-name="martinsbalodis" version="0.2.0">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0" />
+    </requires>
+	<extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <summary lang="en_gb">Lattelecom Shortcut.lv Live TV</summary>
+        <description lang="en_gb">Watch Lattelecom live TV from Kodi</description>
+		<platform>all</platform>
+	    <website>https://github.com/martinsbalodis/xbmc-lattelecom.tv</website>
+        <source>https://github.com/martinsbalodis/xbmc-lattelecom.tv</source>
+	</extension>
+</addon></addons>
