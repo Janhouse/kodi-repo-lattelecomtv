@@ -22,7 +22,7 @@
             <fanart />
         </assets>
     </extension>
-</addon><addon id="lattelecomtv" name="Lattelecom Live TV" provider-name="martinsbalodis" version="0.4.3">
+</addon><addon id="lattelecomtv" name="Lattelecom Live TV" provider-name="martinsbalodis" version="0.4.4">
     <requires>
         <import addon="xbmc.python" version="2.14.0" />
 	    <import addon="pvr.iptvsimple" optional="true" />
